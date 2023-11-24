@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/planes.css">
+    <title>Conoce nuestros planes</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/Logo.png" alt="Logo de MotherShip" id="logo">
+        </div>
+        <nav class="opciones">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="introduccion">
+        <div class="introduccion background-image"></div>
+        <h2>Crea tu historia, comparte tu voz</h2>
+        <h4>Mothership te permite crear y compartir historias de manera sencilla y efectiva. Diseña de la mano de la Inteligencia Artificial 
+        una experiencia envolvente y memorable para tu comunidad.</h4>
+        <div class="componentes">
+            <div class="boton"><button class="boton">Eleva tu marca al siguiente nivel</button></div>
+            <div class="screen"><img class="screenshot" src="./images/Component1.png" alt="ScreenMothership"></div>
+          </div>
+    </div>
+
+    <div class="infoplanes">
+        <h2>Conoce nuestros planes</h2>
+        <h3 id="basictitle">Basic Plan</h3>
+        <div class="basicplan">
+            <div class="infobasicplan">
+                <h4>1 Campaña mensual</h4>
+                <ul>
+                <li>1 Storytelling (1000 caracteres) con AI</li>
+                <li>12 copies para tus redes con AI</li>
+                <li>Música pensada para tu campaña</li>
+                <li>Generación de imagenes con AI</li>
+            </ul>
+            </div>
+            <div class="valorbasic">
+                <h1>$2.99 usd/mes</h1>
+                <button class="suscribirse">Suscribirse con <img src="./images/Wompi.png"></button>
+            </div>
+        </div>
+
+        <h3 id="premiumtitle">Premium Plan</h3>
+        <div class="premiumplan">
+        <div class="valorpremium">
+            <h1>$5.99 usd/mes</h1>
+            <button class="suscribirse">Suscribirse con <img src="./images/Wompi.png"></button>
+        </div>
+            <div class="infopremiumplan">
+                <h4>3 Campañas mensuales</h4>
+                <ul>
+                <li>3 Storytelling (1000 caracteres c/u) con AI</li>
+                <li>36 copies para tus redes con AI</li>
+                <li>Música pensada para tu campaña</li>
+                <li>Generación de imagenes con AI</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabs-container">
+        <div class="tab" onclick="showTab('basic')" id="tabBasic">Basic Plan</div>
+        <div class="tab" onclick="showTab('premium')" id="tabPremium">Premium Plan</div>
+    </div>
+
+    <div id="basic" class="tab-content active">
+        <h3>Crea 1 campaña impactante para tu marca</h3>
+        <p>Beneficios:</p>
+        <ul>
+            <li>1 storytelling generados con AI</li>
+            <li>12 copy para redes</li>
+            <li>Musicalización</li>
+            <li>Imágenes generadas con AI</li>
+            <li>Este plan es ideal para pequeñas empresas, emprendedores o personas que quieren probar el producto a un precio increíble. Es una buena opción para empezar a crear campañas transmedia de forma sencilla y sin necesidad de invertir mucho dinero.</li>
+        </ul>
+        <p>¿Qué esperas para conocer Mothership?</p>
+    </div>
+
+    <div id="premium" class="tab-content">
+        <h3>Crea 3 campañas inolvidables para tu comunidad</h3>
+        <p>Beneficios:</p>
+        <ul>
+            <li>3 storytelling generados con AI</li>
+            <li>36 copy para redes</li>
+            <li>Musicalización e imágenes generadas con AI</li>
+            <li>33% de descuento sobre el precio real</li>
+            <li>Este plan es ideal para publicistas, grandes empresas, creadores de contenido o community managers. Es una buena opción para empresas que necesitan crear una estrategia de marketing transmedia completa y sostenible</li>
+        </ul>
+        <p>¿Qué esperas para sumarte a Mothership?</p>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p>© 2023 MotherShip</p>
+        </div>
+    </footer>
+
+    <script src="./javascript/planes.js"></script>
+</body>
+</html>
