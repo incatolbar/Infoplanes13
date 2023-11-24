@@ -12,21 +12,29 @@
             <img src="./images/Logo.png" alt="Logo de MotherShip" id="logo">
         </div>
         <nav class="opciones">
-            <ul>
+            <ul id="nav-list">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Contacto</a></li>
                 <li><a href="#">Iniciar sesión</a></li>
             </ul>
+            <div id="menu-icon">&#9776;</div>
         </nav>
+        <div id="logout-icon">
+            <img src="./images/cerrar.png" alt="Cerrar sesión">
+        </div>
     </header>
     <div class="introduccion">
         <div class="introduccion background-image"></div>
         <h2>Crea tu historia, comparte tu voz</h2>
-        <h4>Mothership te permite crear y compartir historias de manera sencilla y efectiva. Diseña de la mano de la Inteligencia Artificial 
-        una experiencia envolvente y memorable para tu comunidad.</h4>
+        <p>Mothership te permite crear y compartir historias de manera sencilla y efectiva. Diseña de la mano de la Inteligencia Artificial 
+        una experiencia envolvente y memorable para tu comunidad.</p>
         <div class="componentes">
-            <div class="boton"><button class="boton">Eleva tu marca al siguiente nivel</button></div>
-            <div class="screen"><img class="screenshot" src="./images/Component1.png" alt="ScreenMothership"></div>
+            <div class="boton">
+                <button class="button" href="#">Eleva tu marca al siguiente nivel</button>
+            </div>
+            <div class="screen">
+                <img class="screenshot" src="./images/Component1.png" alt="ScreenMothership">
+            </div>
           </div>
     </div>
 
@@ -36,7 +44,7 @@
         <div class="basicplan">
             <div class="infobasicplan">
                 <h4>1 Campaña mensual</h4>
-                <ul>
+                <ul class="list">
                 <li>1 Storytelling (1000 caracteres) con AI</li>
                 <li>12 copies para tus redes con AI</li>
                 <li>Música pensada para tu campaña</li>
@@ -44,7 +52,7 @@
             </ul>
             </div>
             <div class="valorbasic">
-                <h1>$2.99 usd/mes</h1>
+                <h2 id="valor1">$2.99 usd/mes</h2>
                 <button class="suscribirse">Suscribirse con <img src="./images/Wompi.png"></button>
             </div>
         </div>
@@ -52,12 +60,13 @@
         <h3 id="premiumtitle">Premium Plan</h3>
         <div class="premiumplan">
         <div class="valorpremium">
-            <h1>$5.99 usd/mes</h1>
+            <p>$8.99 usd/mes</p>
+            <h2 id="valor2">$5.99 usd/mes</h2>
             <button class="suscribirse">Suscribirse con <img src="./images/Wompi.png"></button>
         </div>
             <div class="infopremiumplan">
                 <h4>3 Campañas mensuales</h4>
-                <ul>
+                <ul class="list">
                 <li>3 Storytelling (1000 caracteres c/u) con AI</li>
                 <li>36 copies para tus redes con AI</li>
                 <li>Música pensada para tu campaña</li>
@@ -68,34 +77,42 @@
     </div>
 
     <div class="tabs-container">
-        <div class="tab" onclick="showTab('basic')" id="tabBasic">Basic Plan</div>
-        <div class="tab" onclick="showTab('premium')" id="tabPremium">Premium Plan</div>
+        <div class="tab tab-basic active" onclick="showTab('basic')" id="tabBasic">Basic Plan</div>
+        <div class="tab tab-premium active" onclick="showTab('premium')" id="tabPremium">Premium Plan</div>
     </div>
-
+    <hr>
     <div id="basic" class="tab-content active">
-        <h3>Crea 1 campaña impactante para tu marca</h3>
+        <h3 id="crea1">Crea 1 campaña impactante para tu marca</h3>
         <p>Beneficios:</p>
         <ul>
             <li>1 storytelling generados con AI</li>
             <li>12 copy para redes</li>
             <li>Musicalización</li>
             <li>Imágenes generadas con AI</li>
-            <li>Este plan es ideal para pequeñas empresas, emprendedores o personas que quieren probar el producto a un precio increíble. Es una buena opción para empezar a crear campañas transmedia de forma sencilla y sin necesidad de invertir mucho dinero.</li>
         </ul>
+        <p>Este plan es ideal para pequeñas empresas, emprendedores o personas que quieren probar el producto a un precio increíble. Es una buena opción 
+            para empezar a crear campañas transmedia de forma sencilla y sin necesidad de invertir mucho dinero.</p>
+        <div class="final">
         <p>¿Qué esperas para conocer Mothership?</p>
+        <button class="suscribirse">Suscribirse con <img src="./images/Wompi.png"></button>
+    </div>
     </div>
 
     <div id="premium" class="tab-content">
-        <h3>Crea 3 campañas inolvidables para tu comunidad</h3>
+        <h3 id="crea3">Crea 3 campañas inolvidables para tu comunidad</h3>
         <p>Beneficios:</p>
         <ul>
             <li>3 storytelling generados con AI</li>
             <li>36 copy para redes</li>
             <li>Musicalización e imágenes generadas con AI</li>
             <li>33% de descuento sobre el precio real</li>
-            <li>Este plan es ideal para publicistas, grandes empresas, creadores de contenido o community managers. Es una buena opción para empresas que necesitan crear una estrategia de marketing transmedia completa y sostenible</li>
         </ul>
+        <p>Este plan es ideal para publicistas, grandes empresas, creadores de contenido o community managers. Es una buena 
+            opción para empresas que necesitan crear una estrategia de marketing transmedia completa y sostenible</p>
+        <div class="final">
         <p>¿Qué esperas para sumarte a Mothership?</p>
+        <button class="suscribirse">Suscribirse con <img src="./images/Wompi.png"></button>
+    </div>
     </div>
 
     <footer>
