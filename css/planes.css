@@ -75,20 +75,24 @@ header {
 
 h2 {
     text-align: center;
-    font-size: 42px;
+    font-size: 2.625rem;
 }
 
 .introduccion h2 {
     color: #F6FAFF;
     margin-top: 0;
-    padding-top: 50px;
+    padding-top: 3.125rem;
+}
+
+p {
+    color: #09244B;
 }
 
 .introduccion p {
-    color: 10px #09244B;
+    color: 1px solid #09244bc4;
     padding-left: 3.5%;
     padding-right: 3.5%;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight:600;
 }
 
@@ -105,6 +109,7 @@ h2 {
 }
 
 .button {
+    color: #09244B;
     font-size: 20px;
     width: 20.4rem;
     height: 2.25rem;
@@ -131,6 +136,7 @@ h2 {
 
 .infoplanes h2 {
     color: #09244B ;
+    margin-bottom: 9rem;
 }
 
 #basictitle {
@@ -138,6 +144,21 @@ h2 {
     margin-left: 14.5%;
     color:  #09244B;
     margin-bottom: 0;
+}
+
+.imagen1 {
+    width: 13.625rem;
+    height: 13.75rem;
+    position: absolute;
+    right: 50%;
+    transform: translateX(58%) translateY(-65%);
+    z-index: 10;
+}
+
+.basicplan {
+    display: flex;
+    position: relative;
+    margin-bottom: 12rem;
 }
 
 .infobasicplan {
@@ -170,9 +191,7 @@ h2 {
     list-style-image: url(/images/icon.png);
 }
 
-.basicplan {
-    display: flex;
-}
+
 
 .suscribirse img {
     width: 3.155rem;
@@ -227,6 +246,16 @@ h2 {
 
 .premiumplan {
     display: flex;
+    position: relative;
+}
+
+.imagen2 {
+    width: 18.75rem;
+    height: 13.375rem;
+    position: absolute;
+    right: 50%;
+    transform: translateX(165%) translateY(-65%);
+    z-index: 10;
 }
 
 .valorpremium img {
@@ -287,6 +316,7 @@ hr {
     margin-left: 5%;
     font-size: 1.75rem;
     font-weight: 600;
+    color: #09244B;
 }
 
 #basic h3,
@@ -354,6 +384,10 @@ footer {
         order: 2;
         text-align: center;
     }
+
+    .introduccion {
+        background-size: 100% 95%;
+    }
     
     .opciones ul {
         display: none;
@@ -383,4 +417,192 @@ footer {
         display: block;
         order: 3;
     }
+
+    .imagen1 {
+        width: 10.625rem;
+        height: 10.75rem;
+        transform: translateX(90%) translateY(-90%);
+    
+    }
+
+    .imagen2 {
+        width: 15.75rem;
+        height: 10.375rem;
+        transform: translateX(70%) translateY(-90%);
+    
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 850px) {
+    .imagen1 {
+        transform: translateX(120%) translateY(-90%);
+    
+    }
+
+    .imagen2 {
+        transform: translateX(95%) translateY(-84%);
+    
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .screenshot {
+        display: none;
+    }
+
+    .introduccion h2 {
+        font-size: 2rem;
+        padding-top: 1rem;
+    }
+
+    .introduccion p {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-top: 5rem; 
+    }
+
+    .basicplan,
+    .premiumplan {
+        flex-direction: column;
+    }
+
+    .botonwompi1,
+    .botonwompi2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .suscribirse {
+        align-items: center;
+    }
+
+    .infobasicplan,
+    .infopremiumplan {
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+    }
+
+    .infopremiumplan {
+        margin-bottom: 0;
+    }
+
+    #valor1,
+    #valor2 {
+        margin-top: 0;
+        font-size: 2rem;
+    }
+
+
+    .valor2 {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+
+    #basictitle,
+    #premiumtitle {
+        font-size: 1.4rem;
+        margin-left: 5%;
+        margin-bottom: 2rem;
+    }
+
+    .valorpremium {
+        order: 2;
+        margin-left: 0;
+    }
+
+    .valorpremium p {
+        margin-top: 0;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .list li {
+        font-size: 1rem;
+
+    }
+
+    .tab {
+        font-size: 1.4rem;
+    }
+
+    .tabs-container {
+        margin-top: 15%;
+    }
+
+    #crea1,
+    #crea3 {
+        font-size: 1.4rem;
+    }
+
+    #basic,
+    #premium {
+        font-size: 1rem;
+    }
+
+    .final {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .final button {
+        margin: 0;
+    }
+
+
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1030px) {
+
+    .introduccion {
+        background-size: 100% 90%;
+    }
+}
+
+
+@media screen and (max-width: 1030px) {
+    .screen img {
+        width: 100%;
+        height: auto;
+    }
+
+    .boton {
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width: 851px) and (max-width:1029px) {
+
+
+    .imagen1 {
+        width: 10.625rem;
+        height: 10.75rem;
+        transform: translateX(50%) translateY(-65%);
+    
+    }
+
+    .imagen2 {
+        width: 15.75rem;
+        height: 10.375rem;
+        transform: translateX(145%) translateY(-65%);
+    
+    }
+    
+    }
+
+
+@media screen and (min-width: 1030px) and (max-width:1130px) {
+
+.imagen2 {
+    transform: translateX(150%) translateY(-65%);
+}
+
 }
