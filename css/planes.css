@@ -16,8 +16,8 @@ header {
     display: flex;
     padding: 0;
     padding-top: 1px;
-    padding-left: 83px;
-    padding-right: 50px;
+    padding-left: 5.188rem;
+    padding-right: 4.875rem;
     justify-content: space-between;
     align-items: center;
     background-color: white;
@@ -131,6 +131,7 @@ p {
 }
 
 .infoplanes {
+    margin-top: 190px;
     margin-bottom: 10px;
 }
 
@@ -158,16 +159,16 @@ p {
 .basicplan {
     display: flex;
     position: relative;
-    margin-bottom: 12rem;
+    margin-bottom: 5rem;
 }
 
 .infobasicplan {
     width: 43.75rem;
     height: 16.75rem;
     margin-left: 8%;
-    margin-right: 10%;
+    margin-right: 3%;
     border: 1px solid #09244B;
-    border-radius: 10px;
+    border-radius: 20px;
     padding-bottom: 2%;
 }
 
@@ -194,27 +195,48 @@ p {
 
 
 .suscribirse img {
-    width: 3.155rem;
-    height: 1.06rem;
+    padding-bottom: 0;
+    height: 1.4rem;
+    vertical-align: middle;
 }
 
 #valor1 {
-    color: #5D00B9;
+    color: #09244B;
     margin-bottom: 6px;
-    font-size: 3rem;
+    font-size: 2.625rem;
+    text-align: left;
+    margin-top: 0;
+    font-weight: 700;
 }
 
 .valorbasic {
-    align-items: center;
-    padding-top: 5%;
+    width: 460px;
+    align-items: left;
+    padding-top: 1rem;
+}
+
+.valorbasic p {
+    text-align: right;
+    width: 15.15rem;
+    height: 18px;
+    font-size: 0.75rem;
+    font-weight: 400; 
 }
 
 .suscribirse {
-    margin-top: 2%;
+    margin-top: 6%;
     width: 15.15rem;
     height: 2.25rem;
     font-size: 1.25rem;
     cursor: pointer;
+    font-family: 'Lato',sans-serif;
+    color: #09244B;
+    border-radius: 4px;
+    border: 2px solid #09244B;
+}
+
+#wompi {
+    width: 51px;
 }
 
 #premiumtitle {
@@ -287,10 +309,28 @@ p {
     color: #09244B;
 }
 
+.empieza h2{
+    margin: 1%;
+    text-align: left;
+    margin-left: 5%;
+    color: #C0F;
+}
 
 hr {
     color: 2px solid #09244B;
     width: 90%;
+}
+
+.botonwompi3 {
+    text-align: center;
+}
+
+.botonwompi3 p {
+    text-align: center;
+    height: 18px;
+    font-size: 0.75rem;
+    padding-left: 7%;
+    font-weight: 400;
 }
 
 .tabs-container {
@@ -313,7 +353,7 @@ hr {
 #basic,
 #premium {
     padding-top: 0;
-    margin-left: 5%;
+    margin-left: 4%;
     font-size: 1.75rem;
     font-weight: 600;
     color: #09244B;
@@ -321,7 +361,7 @@ hr {
 
 #basic h3,
 #premium h3{
-    color:#CC00FF
+    color:#5D00B9
 }
 
 .tab-content {
@@ -496,6 +536,11 @@ footer {
         font-size: 2rem;
     }
 
+    .valorbasic p {
+        width: 100%;
+        text-align: center;
+    }
+
 
     .valor2 {
         margin-left: 20%;
@@ -508,6 +553,11 @@ footer {
         font-size: 1.4rem;
         margin-left: 5%;
         margin-bottom: 2rem;
+    }
+
+    .valorbasic {
+        width: 90%;
+        margin-left: 5%;
     }
 
     .valorpremium {
@@ -594,6 +644,12 @@ footer {
         height: 10.375rem;
         transform: translateX(145%) translateY(-65%);
     
+    }
+
+    #valor1,
+    #valor2 {
+        margin-top: 0;
+        font-size: 2.4rem;
     }
     
     }
